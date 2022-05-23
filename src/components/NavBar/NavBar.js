@@ -6,7 +6,7 @@ const NavBar = () => {
         <header>
             <img className="img-fluid logo" src={logo} alt="logo" />
         <a className="button" href="inicio">
-            <button class="btn btn-lightBtnL">inicio</button>
+            <button className="btn btn-lightBtnL">inicio</button>
       </a>
       <nav>
         <ul className="nav__enlaces">
@@ -22,7 +22,7 @@ const NavBar = () => {
         </ul>
       </nav>
       <a className="button" href="inicio">
-        <button class="btn btn-lightBtnR">Contacto</button>
+        <button className="btn btn-lightBtnR">Contacto</button>
       </a>
       <CartWidget />
     </header>
