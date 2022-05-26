@@ -5,14 +5,9 @@ import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 import ItemCount from "./components/ItemCount/ItemCount";
 function App() {
   return (
-    /*    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-    </div> */
     <div className="App">
       <NavBar />
-      <ItemListContainer greeting="E-Commerce" />
+      <ItemListContainer greeting="Libros" />
       <ItemCount stock="5" initial="1"/>
     </div>
     
