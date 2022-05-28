@@ -11,6 +11,7 @@ html {
 
 body {
     background-color: darkgrey;
+    font-family: 'Goudy Bookletter 1911', serif;
 }
 
 li,a,button {
@@ -19,6 +20,9 @@ li,a,button {
     color: white;
     text-decoration: none;
     background-color: black;
+}
+nav{
+    list-style: none;
 }
 
 header {

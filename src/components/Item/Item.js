@@ -1,17 +1,29 @@
 import "./Item.css"
+import React from "react"
+import Card from 'react-bootstrap/Card'
+import Button from 'react-bootstrap/Button'
+
+  const Item = ({img, stock, id, name, price}) => {
+    return (
+<div className="CardItem">
+ <Card  style={{ width: '18rem' }} key={id}>
+ <Card.Img variant="top" src={img} />
+ <Card.Body>
+ <small className="text-muted">{id}</small>
+   <Card.Title style={{margin:"2rem"}}>{name}</Card.Title>
+   <Card.Text>
+
+   </Card.Text>
+   <small className="text-muted">Precio {price}</small>
+ </Card.Body>
+ <Card.Footer>
+   <Button variant="outline-dark">Saber Mas</Button>
+ </Card.Footer>
+ <small className="text-muted"> Stock {stock}</small>
+</Card>
+</div>
 
 
-const Item = ({imagen, stock, id, name,}) => {
-  return (
-    <div className="card" key={name}>
-    <img className="card-img-top" src={imagen} alt={id}/>
-    <div className="card-body">
-        <h4 className="card-title"><b>{name}</b></h4>
-        <p>{stock}</p>
-    </div>
-    </div>
   )
 }
-
-
 export default Item

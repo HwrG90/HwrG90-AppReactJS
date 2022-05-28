@@ -1,0 +1,20 @@
+.card{
+    width: 400px;
+}
+.card-img-top{
+    width: 100%;
+}
+.text-muted{
+    margin-left: 16px;
+}
+.CardItem{
+display: flex;
+justify-content: space-around;
+flex-wrap: nowrap;
+display: inline-block;
+margin: 2rem;
+}
+.CardItem:hover{
+    transition: all 500ms;
+    transform: scale(1.1);
+}
