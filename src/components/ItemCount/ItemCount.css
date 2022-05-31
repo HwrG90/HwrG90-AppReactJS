@@ -1,16 +1,15 @@
 .h3--size{
     text-align: center;
     color: black;
-    font-size: 80px;
-    background-color: darkgrey;
+    font-size: 25px;
+    margin: 7px;
 }
 .ImgCarritoBtn {
     cursor: pointer;
-    width: 35px;
+    width: 16px;
     height: auto;
-  }
+    }
   .contador{
-    margin-top: 5rem;
     display: flex;
     justify-content: center ;
   }

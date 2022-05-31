@@ -15,7 +15,8 @@ const ItemCount = ({ stock, initial }) => {
     }
   };
   const onAdd = () => {
-      console.log (`agregaste al carrito ${count}`);
+    alert( `Agregaste al carrito: ${count}` )
+      console.log (`Agregaste al carrito ${count}`);
   };
   return (
     <div className="card-body">

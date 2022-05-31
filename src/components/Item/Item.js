@@ -3,23 +3,22 @@ import React from "react"
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 
-  const Item = ({img, stock, id, name, price}) => {
+  const Item = ({img, stock, id, name, category, }) => {
     return (
 <div className="CardItem">
- <Card  style={{ width: '18rem' }} key={id}>
+ <Card  style={{ width: '16rem'}} key={id}>
  <Card.Img variant="top" src={img} />
  <Card.Body>
- <small className="text-muted">{id}</small>
+ <small className="text-muted">{}</small>
+ <small className="text-muted">{category}</small>
    <Card.Title style={{margin:"2rem"}}>{name}</Card.Title>
    <Card.Text>
-
    </Card.Text>
-   <small className="text-muted">Precio {price}</small>
  </Card.Body>
  <Card.Footer>
    <Button variant="outline-dark">Saber Mas</Button>
  </Card.Footer>
- <small className="text-muted"> Stock {stock}</small>
+ <small className="text-muted"> Stock: {stock}</small>
 </Card>
 </div>
 
