@@ -3,17 +3,16 @@ import { getItem } from "../../asyncmock";
 import ItemDetail from "../ItemDetail/ItemDetail";
 
 const ItemDetailContainer = () => {
-  const [products, setProducts] = useState();
+  const [product, setProduct] = useState({});
 
   useEffect(() => {
-    getItem('1').then((response) => {
-      setProducts(response);
+    getItem().then((response) => {
+      setProduct(response);
     });
   }, []);
+
   return (
-    <div>
-      <ItemDetail {...products} />
-    </div>
+    <div>{Object.keys(product).length > 0 && <ItemDetail {...product} />}</div>
   );
 };
 
