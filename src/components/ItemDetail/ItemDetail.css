@@ -1,0 +1,12 @@
+.CardItemDetail {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.CardItemDetail:hover {
+    transition: all 400ms;
+    transform: scale(1.1);
+}

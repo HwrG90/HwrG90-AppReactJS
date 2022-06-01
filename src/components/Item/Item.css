@@ -1,20 +1,32 @@
-.card{
+.card {
     width: 400px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
-.card-img-top{
+
+.card-img-top {
     width: 100%;
 }
-.text-muted{
-    margin-left: 16px;
+
+.text-muted {
+    margin-left: 20px;
 }
-.CardItem{
-display: flex;
-justify-content: space-around;
-flex-wrap: nowrap;
-display: inline-block;
-margin: 2rem;
+
+.CardItem {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    display: inline-block;
+    margin-left: 6rem;
+    margin-top: 3rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
-.CardItem:hover{
+
+.CardItem:hover {
     transition: all 500ms;
     transform: scale(1.1);
 }

@@ -1,20 +1,23 @@
-.h3--size{
-    text-align: center;
-    color: black;
-    font-size: 25px;
-    margin: 7px;
+.h3--size {
+  text-align: center;
+  color: black;
+  font-size: 25px;
+  margin: 7px;
 }
+
 .ImgCarritoBtn {
-    cursor: pointer;
-    width: 16px;
-    height: auto;
-    }
-  .contador{
-    display: flex;
-    justify-content: center ;
-  }
-  .carrito{
-    display:flex;
-    width: auto;
-    justify-content: center ;
-  }
+  cursor: pointer;
+  width: 16px;
+  height: auto;
+}
+
+.contador {
+  display: flex;
+  justify-content: center;
+}
+
+.carrito {
+  display: flex;
+  width: auto;
+  justify-content: center;
+}
