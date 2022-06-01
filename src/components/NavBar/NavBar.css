@@ -14,7 +14,7 @@ body {
     font-family: 'Goudy Bookletter 1911', serif;
 }
 
-li,a,button {
+li,a {
     font-weight: 500;
     font-size: 16px;
     color: white;
@@ -70,11 +70,15 @@ text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease 0s;
     color: white;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
 }
 
 .btn-lightBtnL:hover {
     background-color: rgba(82, 88, 100, 08);
     color: white;
+    text-decoration: none;
 }
 .btn-lightBtnR {
     padding: 9px 25px;
@@ -84,9 +88,20 @@ text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease 0s;
     color: white;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
 }
 
 .btn-lightBtnR:hover {
     background-color: rgba(82, 88, 100, 08);
     color: white;
+    text-decoration: none;
+}
+.about{
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    background-color: black;
 }

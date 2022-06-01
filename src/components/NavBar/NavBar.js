@@ -1,33 +1,37 @@
 import "./NavBar.css";
 import logo from "../../InfinitySymbol.png";
 import CartWidget from "../CartWidget/CartWidget";
+import { Link } from "react-router-dom";
 
 
 const NavBar = () => {
   return (
         <header>
+        <Link to={'/'}>
             <img className="img-fluid logo" src={logo} alt="logo" />
-        <a className="button" href="inicio">
-            <button className="btn btn-lightBtnL">Inicio</button>
-      </a>
+        </Link>
+        <Link className="btn-lightBtnL" to={'/'}> Inicio
+        </Link>
       <div>
       <nav>
         <ul className="nav__enlaces">
           <li>
-            <a href="servicios">Servicios</a>
+<Link to={'/category/marron'}>El Matadero</Link>
           </li>
           <li>
-            <a href="proyectos">Productos</a>
+          <Link to={'/category/negro'}>El Aleph</Link>  
           </li>
           <li>
-            <a href="nosotros">Sobre Nosotros</a>
+          <Link to={'/category/blanco'}>Rayuela</Link>  
+          </li>
+          <li>
+          <Link to={'/about'} className="about" >Sobre Nosotros</Link>
           </li>
         </ul>
       </nav>
       </div>
-      <a className="button" href="inicio">
-        <button className="btn btn-lightBtnR">Contacto</button>
-      </a>
+      <Link className="btn-lightBtnR" to={'/contact'}> Contacto
+        </Link>
       <CartWidget />
     </header>
   );
