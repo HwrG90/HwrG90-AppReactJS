@@ -1,16 +1,14 @@
 import "../Item/Item.css";
 import React from "react";
 import Card from "react-bootstrap/Card";
-//import Button from "react-bootstrap/Button";
 import ItemCount from "../ItemCount/ItemCount";
 
 const ItemDetail = ({ name, id, img, description, price, stock }) => {
   return (
     <div className="CardItem">
-      <Card style={{ width: "16rem" }} key={id}>
+      <Card style={{ width: "18rem" }} key={id}>
         <Card.Img variant="top" src={img} />
         <Card.Body>
-         {/*  <small className="text-muted">{category}</small> */}
           <Card.Title style={{ margin: "2rem" }}>{name}</Card.Title>
           <Card.Text>
             <small className="text-muted">Descripcion: {description}</small>

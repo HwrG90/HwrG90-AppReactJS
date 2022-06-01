@@ -16,13 +16,10 @@ const NavBar = () => {
       <nav>
         <ul className="nav__enlaces">
           <li>
-<Link to={'/category/marron'}>El Matadero</Link>
+<Link to={'/category/literaturaArgentina'}>Literatura Argentina</Link>
           </li>
           <li>
-          <Link to={'/category/negro'}>El Aleph</Link>  
-          </li>
-          <li>
-          <Link to={'/category/blanco'}>Rayuela</Link>  
+          <Link to={'/category/litetaturaEspañola'}>Literatura Española</Link>  
           </li>
           <li>
           <Link to={'/about'} className="about" >Sobre Nosotros</Link>
