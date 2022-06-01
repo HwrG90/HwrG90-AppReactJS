@@ -4,14 +4,11 @@
     justify-content: center;
     text-align: center;
     align-items: center;
+    margin-bottom: 4rem;
 }
 
 .card-img-top {
     width: 100%;
-}
-
-.text-muted {
-    margin-left: 20px;
 }
 
 .CardItem {
@@ -29,4 +26,10 @@
 .CardItem:hover {
     transition: all 500ms;
     transform: scale(1.1);
+}
+h2{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 16px;
+    color: black;
 }

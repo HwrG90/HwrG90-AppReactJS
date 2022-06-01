@@ -28,12 +28,12 @@ const ItemDetailContainer = () => {
   }, [productId]);
 
   if (loading) {
+      return (
     <div className="spiner--grow">
-      return{" "}
       <Spinner animation="grow" role="status">
         <span className="visually-hidden"></span>
       </Spinner>
-    </div>;
+    </div> )
   }
 
   return (

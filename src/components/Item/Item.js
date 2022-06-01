@@ -9,21 +9,18 @@ const Item = ({ img, stock, id, name }) => {
       <Card style={{ width: "20rem" }} key={id}>
         <Card.Img variant="top" src={img} />
         <Card.Body>
-          <small className="text-muted">{}</small>
-          <Card.Title style={{ margin: "2rem" }}>{name}</Card.Title>
-          <Card.Text></Card.Text>
+        <Card.Title style={{ fontWeight: "bold"}} >{name}</Card.Title>
         </Card.Body>
-        <Card.Footer>
+        <Card style={{ width: "6rem" }}>
           <Link
-            type="button"
             className="btn btn-outline-secondary"
             to={`/detail/${id}`}
           >
             {" "}
             Saber mas
           </Link>
-        </Card.Footer>
-        <small className="text-muted"> Stock: {stock}</small>
+        </Card>
+        <small className="text-muted"> <h2>Stock: </h2>{stock}</small>
       </Card>
     </div>
   );
