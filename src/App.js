@@ -21,9 +21,9 @@ function App() {
             element={<ItemListContainer greeting="Libros filtrados" />}
           />
           <Route path="/detail/:productId" element={<ItemDetailContainer />} />
-          <Route path="/about" element={<h2>Sobre Nosotros</h2>} />
-          <Route path="/contact" element={<h2>Contacto</h2>} />
-          <Route path="/trolley" element={<h2>Carrito</h2>} />
+          <Route path="/about" element={<h4>Sobre Nosotros</h4>} />
+          <Route path="/contact" element={<h4>Contacto</h4>} />
+          <Route path="/trolley" element={<h4>Carrito</h4>} />
           <Route
             path="*"
             element={<h2 className="h2--styles">Page not found 404</h2>}
