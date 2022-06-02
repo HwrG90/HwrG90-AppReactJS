@@ -41,3 +41,9 @@ Lugar donde se dejara toda la infonmacion sobre la tienda `E-Commers`
 
 #### `Contacto`
 Ofrecemos nuestro contacto en el Navbar para que puedan comunicarse con nosotros ante cualquier duda.
+
+### `Navegacion`
+
+Ejemplo de navegacion por la App:
+
+![gif](./public/images/AppGif.gif)
