@@ -46,4 +46,4 @@ Ofrecemos nuestro contacto en el Navbar para que puedan comunicarse con nosotros
 
 Ejemplo de navegacion por la App:
 
-![gif](./public/images/AppGif.gif)
+![gif](./public/images/gifApp.gif)
