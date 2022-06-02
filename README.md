@@ -1,7 +1,7 @@
 # `E-Commers`
 Este es un proyento creado mediante el uso de React [Create Recat App]
 
-Se trata de un E-Commerce dedicado a la venta de clasicos de la literatura contemporanea.
+Se trata de un `E-Commers` dedicado a la venta de clasicos de la literatura contemporanea.
 
 ## `Repositorio`
 Su repositorio se encuenta en este enlace externo de GitHub:
@@ -24,13 +24,20 @@ La pagina inicia en Home donde estan todos los libros sin filtrar en la parte su
 ### `Categorias`
 Las categorias esta divididas en:
 
-Literatura Argentina
-Literatura Española 
-## `Literatura Argentina`
- Donde accedemos a los libros nacionales y en caso de querer `saber mas` en la card se encuentra un boton para acceder a detalles donde tambien se puede agregar al carrito.
+#### `Literatura Argentina`:
 
-## `Literatura Española`
-Donde accedemos a los libros internacionales y en caso de querer `saber mas` en la card se encuentra un boton para acceder a detalles donde tambien se puede agregar al carrito.
+#### `Literatura Española`:
+#### `Sobre nosotros`:
 
-### `Contacto`
+### `Literatura Argentina`
+ Donde accedemos a los libros nacionales y en caso de querer `Saber mas` en la card se encuentra un boton para acceder a detalles donde tambien se puede agregar al carrito.
+
+### `Literatura Española`
+Donde accedemos a los libros internacionales y en caso de querer `Saber mas` en la card se encuentra un boton para acceder a detalles donde tambien se puede agregar al carrito.
+
+#### `Sobre Nosotros`
+
+Lugar donde se dejara toda la infonmacion sobre la tienda `E-Commers`
+
+#### `Contacto`
 Ofrecemos nuestro contacto en el Navbar para que puedan comunicarse con nosotros ante cualquier duda.
