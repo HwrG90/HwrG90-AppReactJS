@@ -1,36 +1,38 @@
 import { useState } from "react";
 import "./ItemCount.css";
 
-const ItemCount = ({ stock, initial }) => {
-  const [count, setCount] = useState(parseInt(initial));
+function ItemCount({ stock, inicial = 1, onAdd }) {
+  const [start, setInicial] = useState(inicial);
 
-  const Add = () => {
-    if (count < stock) {
-      setCount(count + 1);
+  const sustract = () => {
+    if (start > 1) {
+      setInicial(start - 1);
     }
   };
-  const Sustract = () => {
-    if (count > initial) {
-      setCount(count - 1);
+
+  const add = () => {
+    if (start < stock) {
+      setInicial(start + 1);
     }
   };
-  const onAdd = () => {
-    alert(`Agregaste al carrito: ${count}`);
-    console.log(`Agregaste al carrito ${count}`);
+
+  const trolley = () => {
+    onAdd(start);
   };
+
   return (
     <div className="card-body">
       <div className="contador">
-        <button className="btn btn-outline-danger" onClick={Sustract}>
+        <button className="btn btn-outline-danger" onClick={sustract}>
           -
         </button>
-        <h3 className="h3--size">{count}</h3>
-        <button className="btn btn-outline-success" onClick={Add}>
+        <h3 className="h3--size">{start}</h3>
+        <button className="btn btn-outline-success" onClick={add}>
           +
         </button>
       </div>
       <div className="carrito">
-        <button className="btn btn-outline-secondary" onClick={onAdd}>
+        <button className="btn btn-outline-secondary" onClick={trolley}>
           Agregar
           <img
             className="ImgCarritoBtn"
@@ -41,6 +43,5 @@ const ItemCount = ({ stock, initial }) => {
       </div>
     </div>
   );
-};
-
+}
 export default ItemCount;
