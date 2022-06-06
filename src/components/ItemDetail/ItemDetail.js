@@ -34,6 +34,7 @@ const ItemDetail = ({ name, id, img, description, price, stock }) => {
           <h2>Stock: </h2>
           {stock}
         </small>
+        <div className="btn--secondary">
         {quantity > 0 ? (
           <Link className="btn btn-outline-secondary" to="/trolley">
             Finalizar compra
@@ -41,6 +42,7 @@ const ItemDetail = ({ name, id, img, description, price, stock }) => {
         ) : (
           <ItemCount stock={stock} onAdd={handleOnAdd} />
         )}
+        </div>
       </Card>
     </div>
   );

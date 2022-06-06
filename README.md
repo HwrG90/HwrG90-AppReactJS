@@ -19,7 +19,7 @@ Donde va a abrirse en:
 
 ### `Navegabilidad`
 
-La pagina inicia en Home donde estan todos los libros sin filtrar en la parte supuerio se encuentra el Nabvar donde se puede acceder a las distintas secciones, separadas por categoria.
+La pagina inicia en Home donde estan todos los libros sin filtrar en la parte supuerio se encuentra el Navbar donde se puede acceder a las distintas secciones, separadas por categoria.
 
 ### `Categorias`
 Las categorias esta divididas en:
@@ -27,12 +27,13 @@ Las categorias esta divididas en:
 #### `Literatura Argentina`:
 
 #### `Literatura Española`:
+
 #### `Sobre nosotros`:
 
-### `Literatura Argentina`
+#### `Literatura Argentina`
  Donde accedemos a los libros nacionales y en caso de querer `Saber mas` en la card se encuentra un boton para acceder a detalles donde tambien se puede agregar al carrito.
 
-### `Literatura Española`
+#### `Literatura Española`
 Donde accedemos a los libros internacionales y en caso de querer `Saber mas` en la card se encuentra un boton para acceder a detalles donde tambien se puede agregar al carrito.
 
 #### `Sobre Nosotros`
@@ -42,7 +43,7 @@ Lugar donde se dejara toda la infonmacion sobre la tienda `E-Commers`
 #### `Contacto`
 Ofrecemos nuestro contacto en el Navbar para que puedan comunicarse con nosotros ante cualquier duda.
 
-### `Navegacion`
+#### `Navegacion`
 
 Ejemplo de navegacion por la App:
 

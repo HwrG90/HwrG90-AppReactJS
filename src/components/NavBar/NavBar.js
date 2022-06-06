@@ -19,7 +19,7 @@ const NavBar = () => {
 <Link to={'/category/literaturaArgentina'}>Literatura Argentina</Link>
           </li>
           <li>
-          <Link to={'/category/litetaturaEspañola'}>Literatura Española</Link>  
+          <Link to={'/category/litetaturaEspañola'}>Literatura Española</Link>
           </li>
           <li>
           <Link to={'/about'} className="about" >Sobre Nosotros</Link>

@@ -11,7 +11,7 @@ const CartWidget = () => {
           alt="Carrito de Compras"
         />
       </Link>
-      <h3 className="h3__color"> </h3>
+      <h5 className="h5__color">0</h5>
     </div>
   );
 };
