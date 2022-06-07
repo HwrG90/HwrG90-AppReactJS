@@ -1,0 +1,25 @@
+.ImgCartWidget {
+    cursor: pointer;
+    width: 35px;
+    height: 40px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .ImgCartWidget:hover {
+    transition: all 300ms;
+    transform: scale(1.2);
+  }
+  .tableCard{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+    
+  }

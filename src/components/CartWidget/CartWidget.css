@@ -1,4 +1,4 @@
-.ImgCarrito {
+.ImgCartWidget {
   cursor: pointer;
   width: 35px;
   height: 40px;
@@ -7,8 +7,9 @@
   align-items: center;
   display: flex;
   justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
 }
-.ImgCarrito:hover {
+.ImgCartWidget:hover {
   transition: all 300ms;
   transform: scale(1.2);
 }

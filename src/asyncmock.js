@@ -26,13 +26,13 @@ const products = [
     category: "literaturaArgentina",
     img: "https://d3ugyf2ht6aenh.cloudfront.net/stores/526/507/products/97898772525381-b9794455c354cbb38d15843725976161-480-0.png",
     stock: 10,
-    description: 
+    description:
     "Una novela que fusiona la narrativa con lo ludico ",
   },
   {
     id: "4",
     name: "La Celestina",
-    price: "$900",
+    price: 900,
     category: "litetaturaEspañola",
     img: "https://images.cdn1.buscalibre.com/fit-in/360x360/80/c2/80c2be032222bce3c9cad323777d8343.jpg",
     stock: 5,
