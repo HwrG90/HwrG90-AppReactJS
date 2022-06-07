@@ -1,5 +1,4 @@
 import "./App.css";
-//import React, { useState, createContext } from 'react'
 import NavBar from "./components/NavBar/NavBar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 //import ItemCount from "./components/ItemCount/ItemCount";
