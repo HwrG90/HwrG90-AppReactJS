@@ -20,7 +20,3 @@
   font-size: 16px;
   font-weight: lighter;
 }
-.h5__color:hover {
-  transition: all 300ms;
-  transform: scale(1.2);
-}
