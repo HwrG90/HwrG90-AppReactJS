@@ -9,7 +9,7 @@ const Cart = () => {
   return (
     <div>
       <img
-        className="trolleyCart"
+        className="ImgCarrito"
         src="/images/CarritoCompras.png"
         alt="Carrito de Compras"
         style={{ width: "100px", margin: "3rem" }}
@@ -17,9 +17,10 @@ const Cart = () => {
       <div>
         {cart.map((prod) => {
           return (
-            <div className="cart" key={prod.id}>
+            <div key={prod.id}>
               {/*La lista se muestra tanto en card como en tabla todavia no decido en cual va a quedar en la version final */}
-              {/*
+
+              {/*             
               <Card style={{ width: "40%vh" }}>
                 <Card.Body>
                   <Card.Title>{prod.name}</Card.Title>
@@ -40,6 +41,7 @@ const Cart = () => {
               </Card>
             </div> */}
               <Table
+                className="tableCard"
                 striped
                 bordered
                 hover
@@ -77,11 +79,7 @@ const Cart = () => {
                     marginLeft: "2rem ",
                   }}
                 >
-                  <img
-                    className="ImgCarritoBtn"
-                    src="https://cdn-icons-png.flaticon.com/512/1017/1017530.png"
-                    alt="cesto de basura"
-                  />
+                  x
                 </button>
                 <br />
                 <button
