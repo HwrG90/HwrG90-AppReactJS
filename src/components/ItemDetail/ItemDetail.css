@@ -1,23 +1,23 @@
 .CardItemDetail {
-    text-align: center;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .CardItemDetail:hover {
-    transition: all 400ms;
-    transform: scale(1.05);
+  transition: all 400ms;
+  transform: scale(1.05);
 }
-h2{
-    margin-top: 16px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    color: black;
+h2 {
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
 }
-.btn--secondary{
-    margin-bottom: 10px;
+.btn--secondary {
+  margin: 20px;
 }

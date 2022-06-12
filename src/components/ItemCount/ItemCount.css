@@ -19,13 +19,13 @@
   width: auto;
   justify-content: center;
 }
-.btn-outline-secondary{
+.btn-outline-secondary {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
   margin-top: 3px;
 }
-.btn-outline-success{
+.btn-outline-success {
   box-shadow: 0 4px 8px 0 rgba(57, 168, 71, 0.9);
 }
-.btn-outline-danger{
+.btn-outline-danger {
   box-shadow: 0 4px 8px 0 rgb(253, 31, 31);
 }

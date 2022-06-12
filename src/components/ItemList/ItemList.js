@@ -1,5 +1,4 @@
-/* import Item from "../Item/Item";
-import "../ItemDetail/ItemDetail.css";
+import Item from "../Item/Item";
 
 const ItemList = ({ productos }) => {
   return (
@@ -11,18 +10,4 @@ const ItemList = ({ productos }) => {
   );
 };
 
-export default ItemList; */
-
-import Item from '../Item/Item'
-
-
-
-const ItemList = ({productos}) => {
-    return(
-        <div>
-             {productos.map(prod => <Item key={prod.id} {...prod} />)} 
-        </div>
-    )
-}
-
-export default ItemList
+export default ItemList;
