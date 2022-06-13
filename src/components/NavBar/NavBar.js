@@ -1,9 +1,9 @@
 import "../NavBar/NavBar.css";
-import CarritoComponente from "../CartWidget/CarritoComponente";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import CartContext from "../../context/CartContext";
 import logo from "../../InfinitySymbol.png";
+import CarritoComponente from "../CartWidget/CartWidget";
 
 function NavBar() {
   const { contadorProductosCarrito } = useContext(CartContext);

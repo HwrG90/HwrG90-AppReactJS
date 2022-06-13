@@ -5,6 +5,7 @@ import { CartContextProvider } from "./context/CartContext";
 import ItemDetailConteiner from "./components/ItemDetailContainer/ItemDetailContainer";
 import Cart from "./components/Cart/Cart";
 import "./App.css";
+import PageNotFound from "./components/PageNotFound/pageNotFound";
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
             <Route path="/detalle/:id" element={<ItemDetailConteiner />} />
             <Route path="/contacto" element={<h5>Contacto</h5>} />
             <Route path="/cart" element={<Cart />} />
-            <Route path="*" element={<h5>Page not found 404</h5>} />
+            <Route path="*" element={<PageNotFound/>} />
           </Routes>
         </BrowserRouter>
       </CartContextProvider>
