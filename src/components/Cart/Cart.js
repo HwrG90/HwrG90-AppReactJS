@@ -67,8 +67,8 @@ const Cart = () => {
                           <td>1</td>
                           <td>{prod.nombre}</td>
                           <td>{prod.inicial}</td>
-                          <td>${prod.precio}</td>
-                          <td>${prod.precio * prod.inicial}</td>
+                          <td>$ {prod.precio}</td>
+                          <td>$ {prod.precio * prod.inicial}</td>
                           <div className="buttomX">
                             <button
                               className="btn btn-danger"
@@ -93,7 +93,7 @@ const Cart = () => {
         {contadorCarrito > 0 ? (
           <div className="btn--position">
             <div className="divTotal">
-              <h2 className="h2Total">Total: ${totalApagar}</h2>
+              <h2 className="h2Total">Total: $ {totalApagar}</h2>
             </div>
             <div className="button--position">
               <Link to="*">

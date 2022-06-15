@@ -35,6 +35,23 @@ const productos = [
     stock: 5,
     description: "Clasico de la literatura española",
   },
+  {
+    id: "5",
+    nombre: "Lazarillo de Tormes",
+    precio: 700,
+    categoria: "litetatura Española",
+    img: "https://www.elsotano.com/imagenes_grandes/9786071/978607141112.JPG",
+    stock: 8,
+    description: "El libro cumbre de la novela picarezca",
+  },  {
+    id: "6",
+    nombre: "La casa de Bernarda Alba",
+    precio: 500,
+    categoria: "litetatura Española",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaJiSTUQs_z3Fj2eAwWbwLnku1lrcm1EvRK0tyblUjyaXeGFFm4fYjQgrgEcUS01Y-Cc8&usqp=CAU",
+    stock: 10,
+    description: "Una obra teatral escrita en tres actos",
+  },
 ];
 
 export const listaProductos = () => {

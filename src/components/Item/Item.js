@@ -25,7 +25,7 @@ const Item = ({ id, nombre, precio, img, stock }) => {
         <small className="text-muted">
           {" "}
           <h2>Precio: </h2>
-          {precio}
+          $ {precio}
         </small>
       </Card>
     </div>

@@ -20,7 +20,7 @@ const ItemDetail = ({
 
   const handleOnAdd = (inicial) => {
     setQuantity(inicial);
-
+    alert (`Agregaste al carrito: ${inicial} ${nombre}`)
     addItem({ id, nombre, precio, inicial, img, description, categoria });
   };
 
@@ -38,7 +38,7 @@ const ItemDetail = ({
           <small className="text-muted">
             {" "}
             <h2>Precio: </h2>
-            {precio}
+            $ {precio}
           </small>
         </Card.Body>
         <small className="text-muted">
