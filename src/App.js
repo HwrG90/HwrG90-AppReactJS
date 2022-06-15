@@ -9,7 +9,6 @@ import PageNotFound from "./components/PageNotFound/pageNotFound";
 
 function App() {
   return (
-    <div className="App">
       <CartContextProvider>
         <BrowserRouter>
           <NavBar />
@@ -30,7 +29,7 @@ function App() {
           </Routes>
         </BrowserRouter>
       </CartContextProvider>
-    </div>
+
   );
 }
 

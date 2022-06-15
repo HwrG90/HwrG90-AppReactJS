@@ -23,12 +23,12 @@ function NavBar() {
         <nav>
           <ul className="nav__enlaces">
             <li>
-              <Link to="/categoria/literatura Argentina">
+              <Link to="/categoria/Literatura Argentina">
                 Literatura Argentina
               </Link>
             </li>
             <li>
-              <Link to="/categoria/litetatura Española">
+              <Link to="/categoria/Litetatura Española">
                 Literatura Española
               </Link>
             </li>

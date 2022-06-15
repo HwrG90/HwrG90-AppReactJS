@@ -1,9 +1,11 @@
+//import { productoId } from "../../asyncmock";
 import { useState, useEffect } from "react";
-import { productoId } from "../../asyncmock";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
 import Spinner from "react-bootstrap/Spinner";
 import "./ItemDetailContainer.css";
+import { database } from "../../services/firebase";
+import { doc, getDoc } from "firebase/firestore";
 
 const ItemDetailConteiner = () => {
   const [producto, setProducto] = useState();
@@ -12,7 +14,19 @@ const ItemDetailConteiner = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    productoId(id)
+    getDoc(doc(database, "productos", id))
+      .then((respuesta) => {
+        const producto = { id: respuesta.id, ...respuesta.data() };
+        setProducto(producto);
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+      .finally(() => {
+        setCargando(false);
+      });
+
+    /*     productoId(id)
       .then((respuesta) => {
         setProducto(respuesta);
       })
@@ -21,7 +35,7 @@ const ItemDetailConteiner = () => {
       })
       .finally(() => {
         setCargando(false);
-      });
+      }); */
   }, []);
 
   if (cargando) {
