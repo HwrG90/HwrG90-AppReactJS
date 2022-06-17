@@ -1,11 +1,10 @@
-//import { listaProductos, productosPorCategoria } from "../../asyncmock";
 import { useState, useEffect } from "react";
 import ItemList from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
 import { Spinner } from "react-bootstrap";
 import "./ItemListContainer.css";
 import { getDocs, collection, query, where } from "firebase/firestore";
-import { database } from "../../services/firebase";
+import { dataBase } from "../../services/firebase";
 
 const ItemListContainer = ({ greeting }) => {
   const [productos, setProductos] = useState([]);
@@ -17,10 +16,10 @@ const ItemListContainer = ({ greeting }) => {
 
     const collectionRef = categoriaId
       ? query(
-          collection(database, "productos"),
+          collection(dataBase, "productos"),
           where("categoria", "==", categoriaId)
         )
-      : collection(database, "productos");
+      : collection(dataBase, "productos");
 
     getDocs(collectionRef)
       .then((respuesta) => {
@@ -35,30 +34,6 @@ const ItemListContainer = ({ greeting }) => {
       .finally(() => {
         setCargando(false);
       });
-
-    /*     if (!categoriaId) {
-      listaProductos()
-        .then((respuesta) => {
-          setProductos(respuesta);
-        })
-        .catch((error) => {
-          console.log(error);
-        })
-        .finally(() => {
-          setCargando(false);
-        });
-    } else {
-      productosPorCategoria(categoriaId)
-        .then((respuesta) => {
-          setProductos(respuesta);
-        })
-        .catch((error) => {
-          console.log(error);
-        })
-        .finally(() => {
-          setCargando(false);
-        });
-    } */
   }, [categoriaId]);
 
   if (cargando) {
