@@ -6,8 +6,8 @@ const About = () => {
       <div className="Contenido-About">
         <h1 className="titulo">Sobre nosotros</h1>
         <p className="parrafo">
-          Somos una libreria Familiar, que le brinda los mejores clasicos de la
-          Literatura argentina y espanola{" "}
+          Somos una libreria historica de la Ciudad de Buenos Aires. Nos caracterizamos por tener un amplio stock de los mejores clsicos de la
+          Literatura argentina y española. Contamos con las mejores y mas prestigiosas editoriales del pais y del mundo...  {" "}
         </p>
       </div>
     </div>
