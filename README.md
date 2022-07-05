@@ -19,7 +19,7 @@ Para poder acceder a la aplicacion es necesario entran por consola tecleando:
 
 #### `npm start`
 
-### `npm start`
+## `npm start`
 
 Donde va a abrirse en:
 
