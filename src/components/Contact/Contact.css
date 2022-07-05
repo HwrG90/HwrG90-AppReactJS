@@ -22,23 +22,6 @@
   text-align: center;
   text-transform: uppercase;
 }
-
-.subtitulo {
-  color: #33475b;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.parrafo {
-  color: #33475b;
-
-  padding: 1rem 2rem;
-  font-weight: 400;
-  font-size: 1.125rem;
-  line-height: 1.875rem;
-  margin-bottom: 1em;
-  color: inherit;
-}
 .imgRedes {
   height: 40px;
   width: 40px;

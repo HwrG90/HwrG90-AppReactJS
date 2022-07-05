@@ -16,14 +16,13 @@ function ItemCount({ stock, numeroInicia = 1, onAdd }) {
     }
   };
 
-  const AgregarAlCarrito = ()=>{
-    if(stock > 0){
-        onAdd(inicial)
-    }else {
-        alert("Disculpe", `No hay stock disponible`, "error");
+  const AgregarAlCarrito = () => {
+    if (stock > 0) {
+      onAdd(inicial);
+    } else {
+      alert("Disculpe", `No hay stock disponible`, "error");
     }
-    
- }
+  };
 
   return (
     <div className="card-body">

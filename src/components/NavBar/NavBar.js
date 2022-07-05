@@ -5,7 +5,6 @@ import CartContext from "../../context/CartContext";
 import logo from "../../InfinitySymbol.png";
 import CarritoComponente from "../CartWidget/CartWidget";
 
-
 function NavBar() {
   const { contadorProductosCarrito } = useContext(CartContext);
   const contadorCarrito = contadorProductosCarrito();

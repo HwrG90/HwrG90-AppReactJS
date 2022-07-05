@@ -1,56 +1,56 @@
-.titulo-form{
-    text-align: center;
-    margin: 50px;
-    text-transform: uppercase;
-    color: white;
-    font-size: 50px;
+.titulo-form {
+  text-align: center;
+  margin: 50px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 50px;
 }
 .formulario--size {
-    display: grid;
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-    text-align: center;
-    color: #555;
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  text-align: center;
+  color: #555;
 }
 
 input {
-    margin-bottom: 30px;
-    border-radius: 25px;
-    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+  margin-bottom: 30px;
+  border-radius: 25px;
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
 }
 
 .form-control {
-    margin-top: 1rem;
-    border-radius: 2rem;
-    transition: all 1s;
-    width: 10rem;
-    height: 2rem;
-    text-align: center;
-    border: none;
-    outline: none;
-    padding: 20px 10px 20px 5px;
+  margin-top: 1rem;
+  border-radius: 2rem;
+  transition: all 1s;
+  width: 10rem;
+  height: 2rem;
+  text-align: center;
+  border: none;
+  outline: none;
+  padding: 20px 10px 20px 5px;
 }
 
 .form-control:focus {
-    font-size: 1.2em;
-    border: 0.1rem dotted black;
-    color: black;
+  font-size: 1.2em;
+  border: 0.1rem dotted black;
+  color: black;
 }
 
-label>.fContacto {
-    font-size: 1rem;
+label > .fContacto {
+  font-size: 1rem;
 }
 
-label>.btn {
-    outline: none;
-    border: none;
-    cursor: pointer;
-    border-radius: 30px;
-    font-size: 1rem;
-    font-weight: 600;
-    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
-    display: grid;
-    justify-items: center;
+label > .btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+  display: grid;
+  justify-items: center;
 }

@@ -3,7 +3,7 @@ import ItemList from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
 import { Spinner } from "react-bootstrap";
 import "./ItemListContainer.css";
-import { productosDeBD } from '../../services/firebase/api'
+import { productosDeBD } from "../../services/firebase/api";
 
 const ItemListContainer = ({ greeting }) => {
   const [productos, setProductos] = useState([]);
@@ -11,16 +11,19 @@ const ItemListContainer = ({ greeting }) => {
   const { categoriaId } = useParams();
 
   useEffect(() => {
-    setCargando(true)
+    setCargando(true);
 
-    productosDeBD(categoriaId).then(resp =>{
-        setProductos(resp)
-    }).catch(error => {
-        console.log(error)
-    }).finally(()=>{
-        setCargando(false)
-    })
-},[categoriaId])
+    productosDeBD(categoriaId)
+      .then((resp) => {
+        setProductos(resp);
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+      .finally(() => {
+        setCargando(false);
+      });
+  }, [categoriaId]);
 
   if (cargando) {
     return (
