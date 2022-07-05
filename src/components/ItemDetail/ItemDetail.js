@@ -26,8 +26,8 @@ const ItemDetail = ({
 
   return (
     <div className="CardItemDetail">
-      <Card style={{ width: "20rem" }}>
-        <Card.Img variant="top" src={img} />
+      <Card style={{ width: "18rem", borderRadius:"10px"}}>
+        <Card.Img variant="top" src={img} style={{width: "20rem", borderRadius:"5px"}} />
         <Card.Body>
           <Card.Title style={{ fontWeight: "bold" }}>{nombre}</Card.Title>
           <small className="text-muted">
