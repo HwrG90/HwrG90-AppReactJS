@@ -3,8 +3,7 @@ import ItemList from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
 import { Spinner } from "react-bootstrap";
 import "./ItemListContainer.css";
-import { getDocs, collection, query, where } from "firebase/firestore";
-import { dataBase } from "../../services/firebase";
+import { productosDeBD } from '../../services/firebase/api'
 
 const ItemListContainer = ({ greeting }) => {
   const [productos, setProductos] = useState([]);
@@ -12,29 +11,16 @@ const ItemListContainer = ({ greeting }) => {
   const { categoriaId } = useParams();
 
   useEffect(() => {
-    setCargando(true);
+    setCargando(true)
 
-    const collectionRef = categoriaId
-      ? query(
-          collection(dataBase, "productos"),
-          where("categoria", "==", categoriaId)
-        )
-      : collection(dataBase, "productos");
-
-    getDocs(collectionRef)
-      .then((respuesta) => {
-        const productos = respuesta.docs.map((doc) => {
-          return { id: doc.id, ...doc.data() };
-        });
-        setProductos(productos);
-      })
-      .catch((error) => {
-        console.log(error);
-      })
-      .finally(() => {
-        setCargando(false);
-      });
-  }, [categoriaId]);
+    productosDeBD(categoriaId).then(resp =>{
+        setProductos(resp)
+    }).catch(error => {
+        console.log(error)
+    }).finally(()=>{
+        setCargando(false)
+    })
+},[categoriaId])
 
   if (cargando) {
     return (

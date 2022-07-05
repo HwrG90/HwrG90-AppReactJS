@@ -1,0 +1,41 @@
+.contenedor-About {
+  min-height: 100vh;
+  background-image: url("https://resizer.glanacion.com/resizer/kOXQ0ddA9QiNpz0xaketTwo2-Eg=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/ISIGS4JOBVH6RNHBI2JQY3KGZA.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Contenido-About {
+  width: 1200px;
+  height: 500px;
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 10px;
+  box-shadow: 0 0 30px 0 black;
+}
+
+.titulo {
+  color: #33475b;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.subtitulo {
+  color: #33475b;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.parrafo {
+  color: #33475b;
+
+  padding: 1rem 2rem;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  margin-bottom: 1em;
+  color: inherit;
+}

@@ -6,30 +6,33 @@ import ItemDetailConteiner from "./components/ItemDetailContainer/ItemDetailCont
 import Cart from "./components/Cart/Cart";
 import "./App.css";
 import PageNotFound from "./components/PageNotFound/pageNotFound";
+import Formulario from "./components/Formulario/Formulario";
+import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
-      <CartContextProvider>
-        <BrowserRouter>
-          <NavBar />
-          <Routes>
-            <Route
-              path="/"
-              element={<ItemListContainer greeting="Todos los libros" />}
-            />
-            <Route
-              path="/categoria/:categoriaId"
-              element={<ItemListContainer greeting="Libros filtrados" />}
-            />
-            <Route path="/about" element={<h5>Sobre Nosotros</h5>} />
-            <Route path="/detalle/:id" element={<ItemDetailConteiner />} />
-            <Route path="/contacto" element={<h5>Contacto</h5>} />
-            <Route path="/cart" element={<Cart />} />
-            <Route path="*" element={<PageNotFound/>} />
-          </Routes>
-        </BrowserRouter>
-      </CartContextProvider>
-
+    <CartContextProvider>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route
+            path="/"
+            element={<ItemListContainer greeting="Todos los libros" />}
+          />
+          <Route
+            path="/categoria/:categoriaId"
+            element={<ItemListContainer greeting="Libros filtrados" />}
+          />
+          <Route path="/About" element={<About />} />
+          <Route path="/formulario" element={<Formulario />} />
+          <Route path="/detalle/:id" element={<ItemDetailConteiner />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </CartContextProvider>
   );
 }
 

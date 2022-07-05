@@ -1,14 +1,9 @@
-import { useState, createContext, useEffect, useContext } from "react";
+import { useState, createContext, useContext } from "react";
 
 const CartContext = createContext();
 
 export const CartContextProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
-  const [totalApagarr, setTotall] = useState(0);
-
-  useEffect(() => {
-    calcularTotal();
-  }, [cart]);
 
   const addItem = (agregarProducto) => {
     if (!estaEnCart(agregarProducto.id)) {
@@ -55,14 +50,6 @@ export const CartContextProvider = ({ children }) => {
     setCart([]);
   };
 
-  const calcularTotal = () => {
-    let total = 0;
-    cart.forEach((prod) => {
-      total += prod.precio * prod.inicial;
-    });
-    setTotall(total);
-  };
-
   return (
     <CartContext.Provider
       value={{
@@ -72,7 +59,6 @@ export const CartContextProvider = ({ children }) => {
         eliminarProducto,
         iniciarProducto,
         borrarTodoCarrito,
-        calcularTotal,
       }}
     >
       {children}

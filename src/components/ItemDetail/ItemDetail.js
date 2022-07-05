@@ -20,7 +20,7 @@ const ItemDetail = ({
 
   const handleOnAdd = (inicial) => {
     setQuantity(inicial);
-    alert (`Agregaste al carrito: ${inicial} ${nombre}`)
+    alert(`Agregaste al carrito: ${inicial} ${nombre}`);
     addItem({ id, nombre, precio, inicial, img, description, categoria });
   };
 
@@ -37,8 +37,7 @@ const ItemDetail = ({
           </small>
           <small className="text-muted">
             {" "}
-            <h2>Precio: </h2>
-            $ {precio}
+            <h2>Precio: </h2>$ {precio}
           </small>
         </Card.Body>
         <small className="text-muted">
@@ -46,6 +45,7 @@ const ItemDetail = ({
           <h2>Stock: </h2>
           {stock}
         </small>
+
         <div className="btn--secondary">
           {quantity > 0 ? (
             <Link className="btn btn-outline-secondary" to="/cart">
@@ -55,7 +55,7 @@ const ItemDetail = ({
             <ItemCount
               stock={stock}
               onAdd={handleOnAdd}
-              initial={iniciarProducto(id)?.quantity}
+              numeroInicia={iniciarProducto(id)?.inicial}
             />
           )}
           {quantity > 0 ? (

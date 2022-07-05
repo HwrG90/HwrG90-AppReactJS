@@ -33,14 +33,14 @@ function NavBar() {
               </Link>
             </li>
             <li>
-              <Link to="/about" className="about">
+              <Link to="/About" className="about">
                 Sobre Nosotros
               </Link>
             </li>
           </ul>
         </nav>
       </div>
-      <Link className="btn-lightBtnR" to="/contacto">
+      <Link className="btn-lightBtnR" to="/Contact">
         {" "}
         Contacto
       </Link>
