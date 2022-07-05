@@ -11,9 +11,9 @@ Su repositorio se encuenta en este enlace externo de GitHub:
 
 Para poder acceder a la aplicacion es necesario entran por consola tecleando:
 
-$ git clone https://github.com/HwrG90/HwrG90-AppReactJS.git
-$ npm install
-$ npm start
+`git clone` (https://github.com/HwrG90/HwrG90-AppReactJS.git)
+`npm install`
+`npm start`
 
 ### `npm start`
 
@@ -43,13 +43,10 @@ Key	[https://github.com/HwrG90/HwrG90-AppReactJS/blob/final-project/env.example]
 #### `Contact`
 
 
-Finalizar compra. Nos llevara al carrito de productos, donde vemos la cantidad del producto, el precio unitario y el subtotal. En la misma página vamos a ver el total de todos los productos que añadimos al carrito. Además vamos a ver dos botones, uno para vaciar todo el carrito de compras y otro para pagar. Ese mismo te lleva al formulario de compra, donde ingresaremos NOMBRE, APELLIDO, E-MAIL Y TELEFONO. Para finalizar la compra creamos una orden que se carga en la base de datos FIREBASE.
-
-
 
 ### `Navegabilidad`
 
-La pagina inicia en Home donde estan todos los libros sin filtrar en la parte supuerio se encuentra el Navbar donde se puede acceder a las distintas secciones, separadas por categoria. los productos cargados provenientes de la base de datos FIREBASE
+La pagina inicia en Home donde estan todos los libros sin filtrar en la parte supuerio se encuentra el Navbar donde se puede acceder a las distintas secciones, separadas por categoria. los productos cargados provienen de la base de datos de `FIREBASE`
 
 ### `Categorias`
 Las categorias esta divididas en:
@@ -72,6 +69,8 @@ Lugar donde se aloja toda la infonmacion sobre la tienda `E-Commers`
 
 #### `Contacto`
 Ofrecemos nuestro contacto en el Navbar para que puedan comunicarse con nosotros ante cualquier duda.
+
+`Finalizar compra`. Nos llevara al carrito de productos, donde vemos la cantidad del producto, el precio unitario y el subtotal. En la misma página vamos a ver el total de todos los productos que añadimos al carrito. Además vamos a ver dos botones, uno para vaciar todo el carrito de compras y otro para pagar. Ese mismo te lleva al formulario de compra, donde ingresaremos NOMBRE, APELLIDO, E-MAIL Y TELEFONO. Para finalizar la compra creamos una orden que se carga en la base de datos FIREBASE.
 
 #### `Navegacion`
 
